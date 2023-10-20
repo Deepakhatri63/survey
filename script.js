@@ -10,7 +10,7 @@ window.addEventListener('scroll', function() {
       navbar.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.2)';
     } else {
       // If at the top, revert to the original color
-      navbar.style.backgroundColor = '#171717';
+      navbar.style.backgroundColor = '#030303';
       navbar.style.boxShadow = 'none';
       navbar.style.color = 'whitesmoke';
     }
