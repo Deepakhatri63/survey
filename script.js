@@ -31,4 +31,30 @@ window.addEventListener('scroll', function() {
     });
 });
 
+
+  function sendEmail() {
+    // Get the user input from the textareas
+    const resourceRequest = document.querySelector('#resource-request').value;
+    const helpfulInfo = document.querySelector('#helpful-info').value;
+    const interestedInContact = document.querySelector('#interested-in-contact').value;
+
+    emailjs.init("PWPCGmT4fMbanb-lI"); 
+    // Use the EmailJS API to send the email
+    emailjs.send("service_5316j36", "template_yx5jjoi", {
+      resource_request: resourceRequest,
+      helpful_info: helpfulInfo,
+      contact_interest: interestedInContact
+    }).then(
+      function(response) {
+        console.log("Email sent successfully", response);
+        // You can display a success message to the user if needed.
+      },
+      function(error) {
+        console.error("Email sending failed", error);
+        // You can display an error message to the user if needed.
+      }
+    );
+  }
+
+
   

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -86,34 +87,35 @@
         humanitarian organizations
       </h1>
     </div>
-
+    <div class="rectangle">
     <div class="form">
         <h1>Survey</h1>
+    </div>
     </div>
 
     <div class="survey-form" id="survey">
         <h1>
              1. What other resources would you like access to?
         </h1>
-        <textarea rows="10" cols="70"
+        <textarea id="resource-request" rows="10" cols="70"
          style="resize: none;">
         </textarea>
 
         <h1>
              2. What else would you find helpful?
         </h1>
-        <textarea rows="10" cols="70"
+        <textarea id="helpful-info" rows="10" cols="70"
          style="resize: none;">
         </textarea>
 
         <h1>
              3. Would you be interested in speaking directly with the organisations involved?
         </h1>
-        <textarea rows="10" cols="70"
+        <textarea id="interested-in-contact" rows="10" cols="70"
          style="resize: none;">
         </textarea>
 
-        <button>Submit</button>
+        <button onclick="sendEmail()">Submit</button>
     </div>
 
 

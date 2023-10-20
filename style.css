@@ -26,7 +26,6 @@
   padding-left: 5rem;
   font-size: 2.5rem;
   font-family: 'Lora',Georgia,"Times New Roman",serif;
-
 }
 
 a {
@@ -49,7 +48,7 @@ a {
   position: absolute;
   width: 10rem; /* Set the width and height to the same value to create a perfect circle */
   height: 10rem;
-  background-color: #b2dfff; /* Change the background color to your preferred color */
+  background-color: #0047AB; /* Change the background color to your preferred color */
   border-radius: 50%; /* Use border-radius with a value of 50% to make it a circle */
   margin-left: 12%;
   margin-top: 10%;
@@ -94,7 +93,7 @@ a {
 .first-rectangle {
   width: 40rem;
   height: 15rem;
-  background-color: #b2dfff;
+  background-color: #0047AB;
   margin-left: 27rem;
   margin-top: -14rem;
   border-radius: 2rem;
@@ -137,10 +136,32 @@ form {
 
 .form h1 {
   text-align: center; /* Horizontally center the text within the h1 element */
-  margin-top: 4rem;
-  color: #385ef7;
   font-size: 3rem;
   font-family: 'Lora',Georgia,"Times New Roman",serif;
+  color: #000000;
+  transition: color 0.9s ease;
+}
+
+.rectangle{
+  background-color: #0047AB;
+  width: 14rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin-left: 43%;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.rectangle:hover{
+  background-color: #385ef7;
+}
+
+.form h1:hover{
+  color: white;
 }
 
 .survey-form {
@@ -171,12 +192,18 @@ button{
     width: 8rem;
     height: 4rem;
     border-radius: 1rem;
-    background-color: #385ef7;
+    background-color: #0047AB;
     font-size: 1.5rem;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.9s ease;
     font-family: 'Lora',Georgia,"Times New Roman",serif;
+}
+
+button:hover{
+  background-color: #385ef7;
+
 }
 
 @media screen and (max-width: 768px) {
