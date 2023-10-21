@@ -10,12 +10,25 @@
 
   gtag('config', 'G-VZ2RZNP175');
 </script>
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6LdYFLgoAAAAABJEjWveAfCSOC7FJCsz4XHB49Jz" async defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <title>Critical Resources</title>
   </head>
+  <script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('6LdYFLgoAAAAABJEjWveAfCSOC7FJCsz4XHB49Jz', {action: 'LOGIN'});
+        // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+        // reCAPTCHA Enterprise to the end user's browser.
+        // This token must be validated by creating an assessment.
+        // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+      });
+    }
+    </script>
   <body>
     <div class="navbar">
       <h1>Critical Resources</h1>
@@ -34,52 +47,50 @@
         </p>
       </div>
     </div>
-    <div class="vertical-line"></div>
 
-    <div class="arrow">
-      <img src="assests/ar.png" alt="Horizontal Arrow" />
+    <div class="vertical-line"></div>
+    <div class="h-line">
     </div>
-    <div class="first-rectangle">
+    <div class="first-rectangle" id="first">
       <h1>Emergency Mental Health Support</h1>
       <h2>Organisation name & logo</h2>
       <h2>Working hours</h2>
       <h2>Contact information</h2>
     </div>
-
-    <div class="arrow">
-      <img src="assests/ar.png" alt="Horizontal Arrow" />
+    
+    <div class="vertical-line1"></div>
+    <div class="h-line1">
     </div>
-    <div class="first-rectangle">
+    <div class="first-rectangle" id="second">
       <h1>Emergency Legal Aid</h1>
       <h2>Organisation name & logo</h2>
       <h2>Working hours</h2>
       <h2>Contact information</h2>
     </div>
 
-    <div class="arrow">
-      <img src="assests/ar.png" alt="Horizontal Arrow" />
+    
+    <div class="vertical-line2"></div>
+    <div class="h-line2">
     </div>
-    <div class="first-rectangle">
+    <div class="first-rectangle" id="third">
       <h1>Emergency Housing Support</h1>
       <h2>Organisation name & logo</h2>
       <h2>Working hours</h2>
       <h2>Contact information</h2>
     </div>
 
-    <div class="arrow">
-      <img src="assests/ar.png" alt="Horizontal Arrow" />
-    </div>
-    <div class="first-rectangle">
+    <div class="vertical-line3"></div>
+    <div class="h-line3"></div>
+    <div class="first-rectangle" id="fourth">
       <h1>Digital Security Service Support</h1>
       <h2>Organisation name & logo</h2>
       <h2>Working hours</h2>
       <h2>Contact information</h2>
     </div>
 
-    <div class="arrow">
-      <img src="assests/ar.png" alt="Horizontal Arrow" />
-    </div>
-    <div class="first-rectangle">
+    <div class="vertical-line4"></div>
+    <div class="h-line4"></div>
+    <div class="first-rectangle" id="fifth">
       <h1>Digital Security Training Resources</h1>
       <h2>Organisation name & logo</h2>
       <h2>Working hours</h2>
@@ -98,7 +109,7 @@
     </div>
     <div class="rectangle">
     <div class="form">
-        <h1>Survey</h1>
+        <h1>Help Us Improve</h1>
     </div>
     </div>
 
