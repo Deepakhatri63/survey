@@ -93,8 +93,8 @@ const translations = {
     report: 'You can report hate speech and harmful content from social media targetting our communities here. Any instances of online outing, doxxing, etc. We do not have the capacity to respond to individual cases, but we will make sure the data is used to monitor conditions online.',
     date: 'Information last updated:',
     answers: 'The anonymised answers from this survey will be shared with humanitarian organizations ',
-    one: 'What other resources would you like access to?',
-    two: 'What else would you find helpful?',
+    one: '1. What other resources would you like access to?',
+    two: '2. What else would you find helpful?',
     
   },
   ar: {

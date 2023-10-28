@@ -236,7 +236,7 @@ a {
 
 .first-rectangle:hover {
   background-color: #385ef7; /* Change the background color to dark blue on hover */
-  /* color: #fff; */
+  color: #fff;
   transform: translateY(-5px); /* Lift the rectangle on hover */
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
@@ -418,9 +418,8 @@ textarea{
 .image-container img{
   width: 6rem;
   border-radius: 1rem;
-  position: absolute;
-  margin-left: 34rem;
-  margin-top: -4rem;
+  margin-left: 2rem;
+  margin-top: -1rem;
 }
 
 @media screen and (max-width: 768px) {
