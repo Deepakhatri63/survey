@@ -2,15 +2,24 @@
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VZ2RZNP175"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VZ2RZNP175"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-VZ2RZNP175');
-</script>
-<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+      gtag("config", "G-VZ2RZNP175");
+    </script>
+    <script
+      src="https://www.google.com/recaptcha/enterprise.js"
+      async
+      defer
+    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
@@ -28,33 +37,28 @@
     <div class="heading">
       <div class="circle"></div>
       <div class="language">
-      <div class="content">
-        <p>
-          Here are some critical support and resource options for members from
-          LGBTQI+ communities who are struggling with online issues,
-          discrimination, and other problems.
-        </p>
-        
+        <div class="content">
+          <p>
+            Here are some critical support and resource options for members from
+            LGBTQI+ communities who are struggling with online issues,
+            discrimination, and other problems.
+          </p>
+        </div>
+        <button onclick="toggleLanguage()" class="lang">Arabic</button>
       </div>
-      <button onclick="toggleLanguage()" class="lang">
-        Arabic
-    </button>
-    </div>
     </div>
 
     <div class="vertical-line"></div>
-    <div class="h-line">
-    </div>
+    <div class="h-line"></div>
     <div class="first-rectangle" id="first">
       <h1>Mental Health Support</h1>
       <h2>Organisation name & logo</h2>
       <h2>Working hours</h2>
       <h2>Contact information</h2>
     </div>
-    
+
     <div class="vertical-line1"></div>
-    <div class="h-line1">
-    </div>
+    <div class="h-line1"></div>
     <div class="first-rectangle" id="second">
       <h1>Emergency Legal Aid</h1>
       <h2>Organisation name & logo</h2>
@@ -62,10 +66,8 @@
       <h2>Contact information</h2>
     </div>
 
-    
     <div class="vertical-line2"></div>
-    <div class="h-line2">
-    </div>
+    <div class="h-line2"></div>
     <div class="first-rectangle" id="third">
       <h1>Emergency Housing Support</h1>
       <h2>Organisation name & logo</h2>
@@ -78,14 +80,18 @@
     <div class="first-rectangle" id="fourth">
       <h1>Digital Security Service Support</h1>
       <div class="image-container">
-        <img src="assests/Digital.png" alt="Company logo">
+        <img src="assests/Digital.png" alt="Company logo" />
       </div>
       <h2>Smex Helpdesk</h2>
-      <p class="data">The Digital Safety Helpdesk supports activists, journalists, marginalized groups, and human rights defenders facing cybersecurity incidents and online threats in West Asia and North Africa.<br>
-        For more information, visit our website: <u><a href="http://www.smex.org/helpdesk">www.smex.org/helpdesk</a></u></p>
-      <h2>Working hours</h2>
-      <p class="data">Monday to Friday from 9am till 9pm GMT+3
+      <p class="data">
+        The Digital Safety Helpdesk supports activists, journalists,
+        marginalized groups, and human rights defenders facing cybersecurity
+        incidents and online threats in West Asia and North Africa.<br />
+        For more information, visit our website:
+        <u><a href="http://www.smex.org/helpdesk">www.smex.org/helpdesk</a></u>
       </p>
+      <h2>Working hours</h2>
+      <p class="data">Monday to Friday from 9am till 9pm GMT+3</p>
       <h2>Contact information</h2>
     </div>
 
@@ -97,59 +103,75 @@
       <h2>Working hours</h2>
       <h2>Contact information</h2>
     </div>
-    <div class="survey">
+
+    <div class="vertical-line5"></div>
+    <div class="h-line5"></div>
+    <div class="first-rectangle" id="sixth">
       <h1>
         Online Hate Speech & Harmful Content Reporting Mechanism: (hyperlink to
         Kobo form)
-      <h1>
-      <h2 class="report">
-        You can report hate speech and harmful content from social media targetting our communities here. Any instances of online outing, doxxing, etc. We do not have the capacity to respond to individual cases, but we will make sure the data is used to monitor conditions online.
-      <h2>
-
-       <h2 class="report">
-        <p>Information last updated: date</p>
-       </h2> 
-
-      <h1 class="sur">
-        Survey: The anonymized answers from this survey will be shared with
-        humanitarian organizations
       </h1>
-    </div>
-    <div class="rectangle">
-    <div class="form">
-        <h1>Help Us Improve</h1>
-    </div>
+      <h2 class="report">
+        You can report hate speech and harmful content from social media
+        targetting our communities here. Any instances of online outing,
+        doxxing, etc. We do not have the capacity to respond to individual
+        cases, but we will make sure the data is used to monitor conditions
+        online.
+      </h2>
     </div>
 
-    <div id="custom-alert" class="hidden">
-      <p>Submission successful</p>
-    </div>
-    
-    <div class="survey-form" id="survey">
-        <h1>
-             1. What other resources would you like access to?
+    <div class="flex">
+      <div class="inner">
+        
+        <h1 class="sur">
+          Survey: The anonymized answers from this survey will be shared with
+          humanitarian organizations
         </h1>
-        <textarea id="resource-request" rows="10" cols="70"
-         style="resize: none;">
+        <h2 class="date">
+          <p>Information last updated: date</p>
+        </h2>
+      </div>
+      <div class="inner2">
+      <div class="rectangle">
+        <div class="form">
+          <h1>Help Us Improve</h1>
+        </div>
+      </div>
+
+      <div id="custom-alert" class="hidden">
+        <p>Submission successful</p>
+      </div>
+
+      <div class="survey-form" id="survey">
+        <h1> 1. What other resources would you like access to?</h1>
+        <textarea
+          id="resource-request"
+          rows="8"
+          cols="60"
+          style="resize: none"
+        >
+        </textarea>
+
+        <h1> 2. What else would you find helpful?</h1>
+        <textarea id="helpful-info" rows="8" cols="60" style="resize: none">
         </textarea>
 
         <h1>
-             2. What else would you find helpful?
+           3. Would you be interested in speaking directly with the
+          organisations involved?
         </h1>
-        <textarea id="helpful-info" rows="10" cols="70"
-         style="resize: none;">
-        </textarea>
-
-        <h1>
-             3. Would you be interested in speaking directly with the organisations involved?
-        </h1>
-        <textarea id="interested-in-contact" rows="10" cols="70"
-         style="resize: none;">
+        <textarea
+          id="interested-in-contact"
+          rows="8"
+          cols="60"
+          style="resize: none"
+        >
         </textarea>
 
         <button class="button1" onclick="sendEmail()">Submit</button>
+      </div>
     </div>
-
+  </div>
 
     <script src="script.js"></script>
   </body>

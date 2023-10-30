@@ -122,6 +122,11 @@ a {
   transition: background-color 0.9s ease, color 0.9s ease;
 }
 
+#sixth{
+  background-color: #8ac0f6;
+  transition: background-color 0.9s ease, color 0.9s ease;
+}
+
 
 .vertical-line1 {
   width: 10px;
@@ -219,6 +224,30 @@ a {
   border-radius: 0 0 0 10px; /* Rounded top corners */
 }
 
+.vertical-line5 {
+  width: 10px;
+  height: 67vh;
+  background-color: #73b2f2;
+  margin-top: 147.6rem;
+  margin-left: 17%;
+  position: absolute;
+  top: 12%;
+  background: linear-gradient(to bottom,  #73b2f2, #8ac0f6);
+  z-index: -4;
+  border-radius: 0 10px 10px 10px; /* Rounded bottom corners */
+}
+
+.h-line5{
+  width:10rem;
+  height: 0.6rem;
+  background-color: #8ac0f6;
+  margin-left: 16.17rem;
+  margin-top: 12.6rem;
+  position: absolute;
+  z-index: -1;
+  border-radius: 0 0 0 10px; /* Rounded top corners */
+}
+
 
 .first-rectangle {
   width: 45rem;
@@ -250,14 +279,18 @@ h2 {
   padding-top: 1rem;
 }
 
-.survey {
+/* .survey {
   padding-top: 5rem;
   padding-left: 5rem;
   font-family: 'Nunito',Helvetica,Arial,Lucida,sans-serif;
-}
+} */
 
 .sur {
-  padding-top: 2rem;
+  padding-top: 8rem;
+  padding-left: 2rem;
+  padding-bottom: 4rem;
+  width: 90%;
+  font-size: 1.5rem;
   font-family: 'Nunito',Helvetica,Arial,Lucida,sans-serif;
 }
 
@@ -269,7 +302,7 @@ form {
 
 .form h1 {
   text-align: center; /* Horizontally center the text within the h1 element */
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: 'Lora',Georgia,"Times New Roman",serif;
   color: #fff;
   transition: color 0.9s ease;
@@ -277,13 +310,14 @@ form {
 
 .rectangle{
   background-color: #0047AB;
-  width: 30rem;
-  height: 8rem;
+  width: 20rem;
+  height: 4rem;
   display: flex;
+  margin-top: 10rem;
   align-items: center;
   justify-content: center;
   border-radius: 1rem;
-  margin-left: 33%;
+  margin-left: 22%;
   margin-bottom: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   transition: background-color 0.9s ease, color 0.9s ease;
@@ -308,6 +342,10 @@ form {
 #fifth:hover{
   background-color: #4393f4;
 }
+#sixth:hover{
+  background-color: #4393f4;
+}
+
 
 .form h1:hover{
   color: white;
@@ -332,12 +370,14 @@ form {
 
 
 .survey-form {
-  width: 50rem;
-  height: 70rem;
+  width: 10rem;
+  height: 53rem;
   background-color: #0047AB;
-  margin-left: 22rem;
+  margin-right: 3rem;
+  /* margin-left: 22rem; */
   border-radius: 2rem;
   color: #fff;
+  width: 90%;
   font-size: 0.6rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   transition: background-color 0.9s ease, color 0.9s ease;
@@ -350,7 +390,7 @@ form {
 }
 
 .survey-form h1{
-    padding: 5rem;
+    padding: 3rem;
     padding-bottom: 2rem;
 }
 
@@ -360,10 +400,11 @@ textarea{
 }
 
 .button1{
-    margin: 5rem;
-    margin-left: 21rem;
+    margin: 2rem;
+    margin-left: 17rem;
     width: 8rem;
     height: 4rem;
+    margin-top: 3rem;
     border-radius: 1rem;
     background-color: #4393f4;
     font-size: 1.5rem;
@@ -410,9 +451,14 @@ textarea{
 }
 
 .report{
-  padding-left: 0;
+  padding-left: 2rem;
   margin-right: 5rem;
   font-family: 'Lora',Georgia,"Times New Roman",serif;
+}
+
+.date{
+  font-family: 'Lora',Georgia,"Times New Roman",serif;
+  font-size: 1.3rem; 
 }
 
 .image-container img{
@@ -420,6 +466,23 @@ textarea{
   border-radius: 1rem;
   margin-left: 2rem;
   margin-top: -1rem;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner{
+  padding-top: 10rem;
+  flex: 1;
+  width: 40%;
+}
+
+.inner2 {
+  flex: 1;
+  width: 40%;
+  margin-left: 2%; /* Add some margin for spacing between the two elements */
 }
 
 @media screen and (max-width: 768px) {
