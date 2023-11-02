@@ -117,10 +117,7 @@ a {
   transition: background-color 0.9s ease, color 0.9s ease;
 }
 
-#fifth{
-  background-color: #73b2f2;
-  transition: background-color 0.9s ease, color 0.9s ease;
-}
+
 
 #sixth{
   background-color: #8ac0f6;
@@ -226,7 +223,7 @@ a {
 
 .vertical-line5 {
   width: 10px;
-  height: 67vh;
+  height: 99vh;
   background-color: #73b2f2;
   margin-top: 147.6rem;
   margin-left: 17%;
@@ -277,6 +274,16 @@ a {
 h2 {
   padding-left: 2rem;
   padding-top: 1rem;
+}
+
+#fifth{
+  background-color: #73b2f2;
+  transition: background-color 0.9s ease, color 0.9s ease;
+  height: 40rem;
+}
+
+.pdf{
+  margin-bottom: 2rem;
 }
 
 /* .survey {
@@ -371,7 +378,7 @@ form {
 
 .survey-form {
   width: 10rem;
-  height: 53rem;
+  height: 81rem;
   background-color: #0047AB;
   margin-right: 3rem;
   /* margin-left: 22rem; */
@@ -394,6 +401,25 @@ form {
     padding-bottom: 2rem;
 }
 
+.survey-form:hover::before {
+  content: attr(title);
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+.survey-form:hover::before {
+  opacity: 1;
+}
 textarea{
     margin-left: 5rem;
     border-radius: 1rem;
@@ -458,7 +484,15 @@ textarea{
 
 .date{
   font-family: 'Lora',Georgia,"Times New Roman",serif;
-  font-size: 1.3rem; 
+  font-size: 1.3rem;
+  background-color: #5998f0; 
+  display: inline-block;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-top: 66rem;
 }
 
 .image-container img{
