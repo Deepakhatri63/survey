@@ -391,6 +391,8 @@ form {
   font-family: 'Lora',Georgia,"Times New Roman",serif;
 }
 
+
+
 .survey-form:hover{
   background-color: #4393f4;
   color: #000000;
@@ -401,25 +403,7 @@ form {
     padding-bottom: 2rem;
 }
 
-.survey-form:hover::before {
-  content: attr(title);
-  position: absolute;
-  background-color: #333;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s;
-  z-index: 1;
-}
 
-.survey-form:hover::before {
-  opacity: 1;
-}
 textarea{
     margin-left: 5rem;
     border-radius: 1rem;

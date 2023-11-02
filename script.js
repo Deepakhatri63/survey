@@ -30,6 +30,10 @@ document.getElementById("survey-link").addEventListener("click", function (e) {
   });
 });
 
+tippy('[data-tippy-content]');
+
+
+
 function sendEmail() {
   // Get the user input from the textareas
   const resourceRequest = document.querySelector("#resource-request").value;
