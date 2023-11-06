@@ -10,7 +10,6 @@
 
 .navbar {
   background-color: #121212;
-  width: 100%;
   height: 7rem;
   display: flex;
   color: whitesmoke;
@@ -18,6 +17,7 @@
   align-items: center;
   position: fixed; /* Make the navbar stick to the top */
   top: 0; /* Set it at the top of the viewport */
+  width: 100%; /* Set width to 100% for both desktop and mobile */
   transition: background-color 0.9s, color 0.9s, box-shadow 0.9s;
   z-index: 9999;
 }
@@ -25,12 +25,12 @@
 .navbar h1 {
   padding-left: 5rem;
   font-size: 2.5rem;
-  font-family: 'Lora',Georgia,"Times New Roman",serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
 }
 
 a {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Inherit text color from parent */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
 }
 
 .elements {
@@ -39,7 +39,7 @@ a {
 }
 
 .elements h2 {
-  font-family: 'Lora',Georgia,"Times New Roman",serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
@@ -48,7 +48,7 @@ a {
   position: absolute;
   width: 10rem; /* Set the width and height to the same value to create a perfect circle */
   height: 10rem;
-  background-color: #0047AB; /* Change the background color to your preferred color */
+  background-color: #0047ab; /* Change the background color to your preferred color */
   border-radius: 50%; /* Use border-radius with a value of 50% to make it a circle */
   margin-left: 12%;
   margin-top: 10%;
@@ -64,34 +64,32 @@ a {
   display: flex;
 }
 
-
-
 .content {
   margin-left: 26rem;
   margin-top: 10.5rem;
   font-size: 1.7rem;
   display: flex;
-  width: 49rem;  
-  font-family: 'Nunito',Helvetica,Arial,Lucida,sans-serif;
+  width: 49rem;
+  font-family: "Nunito", Helvetica, Arial, Lucida, sans-serif;
 }
 
 .vertical-line {
   width: 10px;
   height: 35vh;
-  background-color: #0047AB ;
+  background-color: #0047ab;
   margin-top: 120px;
   margin-left: 17%;
   position: absolute;
   top: 12%;
   z-index: -1;
   border-radius: 0 0 10px 10px; /* Rounded bottom corners */
-  background: linear-gradient(to bottom, #0047AB, #0055C8);
+  background: linear-gradient(to bottom, #0047ab, #0055c8);
 }
 
-.h-line{
-  width:10rem;
+.h-line {
+  width: 10rem;
   height: 0.6rem;
-  background-color: #0055C8;
+  background-color: #0055c8;
   margin-left: 16.13rem;
   margin-top: 12.59rem;
   position: absolute;
@@ -99,49 +97,46 @@ a {
   border-radius: 0 0 0 10px; /* Rounded top corners */
 }
 
-#first{
-  background-color: #0055C8;
+#first {
+  background-color: #0055c8;
   transition: background-color 0.9s ease, color 0.9s ease;
 }
 
-#second{
-  background-color: #0063E6;
+#second {
+  background-color: #0063e6;
   transition: background-color 0.9s ease, color 0.9s ease;
 }
-#third{
-  background-color: #0072FF;
+#third {
+  background-color: #0072ff;
   transition: background-color 0.9s ease, color 0.9s ease;
 }
-#fourth{
-  background-color: #1D8FFF;
+#fourth {
+  background-color: #1d8fff;
   transition: background-color 0.9s ease, color 0.9s ease;
 }
 
-
-
-#sixth{
+#sixth {
   background-color: #8ac0f6;
   transition: background-color 0.9s ease, color 0.9s ease;
 }
 
-
 .vertical-line1 {
   width: 10px;
   height: 67vh;
-  background-color: #0055C8;
+  background-color: #0055c8;
   margin-top: 23.6rem;
   margin-left: 17%;
   position: absolute;
-  background: linear-gradient(to bottom, #0055C8, #0063E6);
+  background: linear-gradient(to bottom, #0055c8, #0063e6);
   top: 12%;
   z-index: -2;
   border-radius: 0 10px 10px 10px; /* Rounded bottom corners */
 }
 
-.h-line1{
-  width:10rem;
+.h-line1 {
+  width: 10rem;
   height: 0.6rem;
-  background-color: #0063E6;
+  background-color: #0063e6;
   margin-left: 16.17rem;
   margin-top: 12.6rem;
   position: absolute;
@@ -152,20 +147,20 @@ a {
 .vertical-line2 {
   width: 10px;
   height: 67vh;
-  background-color: #0063E6;
+  background-color: #0063e6;
   margin-top: 54.6rem;
   margin-left: 17%;
   position: absolute;
-  background: linear-gradient(to bottom,  #0063E6, #0072FF);
+  background: linear-gradient(to bottom, #0063e6, #0072ff);
   top: 12%;
   z-index: -3;
   border-radius: 0 10px 10px 10px; /* Rounded bottom corners */
 }
 
-.h-line2{
-  width:10rem;
+.h-line2 {
+  width: 10rem;
   height: 0.6rem;
-  background-color: #0072FF;
+  background-color: #0072ff;
   margin-left: 16.17rem;
   margin-top: 12.6rem;
   position: absolute;
@@ -176,20 +171,20 @@ a {
 .vertical-line3 {
   width: 10px;
   height: 67vh;
-  background-color: #0072FF;
+  background-color: #0072ff;
   margin-top: 85.6rem;
   margin-left: 17%;
   position: absolute;
   top: 12%;
-  background: linear-gradient(to bottom,  #0072FF, #1D8FFF);
+  background: linear-gradient(to bottom, #0072ff, #1d8fff);
   z-index: -4;
   border-radius: 0 10px 10px 10px; /* Rounded bottom corners */
 }
 
-.h-line3{
-  width:10rem;
+.h-line3 {
+  width: 10rem;
   height: 0.6rem;
-  background-color: #1D8FFF;
+  background-color: #1d8fff;
   margin-left: 16.17rem;
   margin-top: 12.6rem;
   position: absolute;
@@ -200,18 +195,18 @@ a {
 .vertical-line4 {
   width: 10px;
   height: 67vh;
-  background-color: #1D8FFF;
+  background-color: #1d8fff;
   margin-top: 116.6rem;
   margin-left: 17%;
   position: absolute;
   top: 12%;
-  background: linear-gradient(to bottom,  #1D8FFF, #73b2f2);
+  background: linear-gradient(to bottom, #1d8fff, #73b2f2);
   z-index: -4;
   border-radius: 0 10px 10px 10px; /* Rounded bottom corners */
 }
 
-.h-line4{
-  width:10rem;
+.h-line4 {
+  width: 10rem;
   height: 0.6rem;
   background-color: #73b2f2;
   margin-left: 16.17rem;
@@ -229,13 +224,13 @@ a {
   margin-left: 17%;
   position: absolute;
   top: 12%;
-  background: linear-gradient(to bottom,  #73b2f2, #8ac0f6);
+  background: linear-gradient(to bottom, #73b2f2, #8ac0f6);
   z-index: -4;
   border-radius: 0 10px 10px 10px; /* Rounded bottom corners */
 }
 
-.h-line5{
-  width:10rem;
+.h-line5 {
+  width: 10rem;
   height: 0.6rem;
   background-color: #8ac0f6;
   margin-left: 16.17rem;
@@ -245,17 +240,16 @@ a {
   border-radius: 0 0 0 10px; /* Rounded top corners */
 }
 
-
 .first-rectangle {
   width: 45rem;
   height: 25rem;
-  background-color: #0047AB;
+  background-color: #0047ab;
   margin-left: 26rem;
   margin-top: 6rem;
   border-radius: 2rem;
   font-size: 0.8rem;
   /* box-shadow: 0 2px 14px rgba(0, 0, 0, 0.8); */
-  font-family: 'Nunito',Helvetica,Arial,Lucida,sans-serif;
+  font-family: "Nunito", Helvetica, Arial, Lucida, sans-serif;
   transition: transform 0.9s; /* Add a transition for smooth animation */
   position: relative;
 }
@@ -264,7 +258,8 @@ a {
   background-color: #385ef7; /* Change the background color to dark blue on hover */
   color: #fff;
   transform: translateY(-5px); /* Lift the rectangle on hover */
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .first-rectangle h1 {
@@ -276,13 +271,13 @@ h2 {
   padding-top: 1rem;
 }
 
-#fifth{
+#fifth {
   background-color: #73b2f2;
   transition: background-color 0.9s ease, color 0.9s ease;
   height: 40rem;
 }
 
-.pdf{
+.pdf {
   margin-bottom: 2rem;
 }
 
@@ -298,7 +293,7 @@ h2 {
   padding-bottom: 4rem;
   width: 90%;
   font-size: 1.5rem;
-  font-family: 'Nunito',Helvetica,Arial,Lucida,sans-serif;
+  font-family: "Nunito", Helvetica, Arial, Lucida, sans-serif;
 }
 
 form {
@@ -310,13 +305,13 @@ form {
 .form h1 {
   text-align: center; /* Horizontally center the text within the h1 element */
   font-size: 2rem;
-  font-family: 'Lora',Georgia,"Times New Roman",serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   color: #fff;
   transition: color 0.9s ease;
 }
 
-.rectangle{
-  background-color: #0047AB;
+.rectangle {
+  background-color: #0047ab;
   width: 20rem;
   height: 4rem;
   display: flex;
@@ -330,31 +325,30 @@ form {
   transition: background-color 0.9s ease, color 0.9s ease;
 }
 
-.rectangle:hover{
+.rectangle:hover {
   background-color: #4393f4;
 }
 
-#first:hover{
+#first:hover {
   background-color: #4393f4;
 }
-#second:hover{
+#second:hover {
   background-color: #4393f4;
 }
-#third:hover{
+#third:hover {
   background-color: #4393f4;
 }
-#fourth:hover{
+#fourth:hover {
   background-color: #4393f4;
 }
-#fifth:hover{
+#fifth:hover {
   background-color: #4393f4;
 }
-#sixth:hover{
+#sixth:hover {
   background-color: #4393f4;
 }
 
-
-.form h1:hover{
+.form h1:hover {
   color: white;
 }
 
@@ -365,7 +359,7 @@ form {
   left: 50%;
   font-weight: 600;
   transform: translate(-50%, -50%);
-  background-color: #0047AB;
+  background-color: #0047ab;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -373,13 +367,10 @@ form {
   z-index: 999;
 }
 
-
-
-
 .survey-form {
-  width: 10rem;
-  height: 81rem;
-  background-color: #0047AB;
+  width: 100%;
+  /* height: 78rem; */
+  background-color: #0047ab;
   margin-right: 3rem;
   /* margin-left: 22rem; */
   border-radius: 2rem;
@@ -388,55 +379,53 @@ form {
   font-size: 0.6rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   transition: background-color 0.9s ease, color 0.9s ease;
-  font-family: 'Lora',Georgia,"Times New Roman",serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
 }
 
-
-
-.survey-form:hover{
+.survey-form:hover {
   background-color: #4393f4;
   color: #000000;
 }
 
-.survey-form h1{
-    padding: 3rem;
-    padding-bottom: 2rem;
+.survey-form h1 {
+  padding: 3rem;
+  padding-bottom: 2rem;
 }
 
-
-textarea{
-    margin-left: 5rem;
-    border-radius: 1rem;
+textarea {
+  width: 80%;
+  height: 7.6rem;
+  margin-left: 4.5rem;
+  border-radius: 1rem;
 }
 
-.button1{
-    margin: 2rem;
-    margin-left: 17rem;
-    width: 8rem;
-    height: 4rem;
-    margin-top: 3rem;
-    border-radius: 1rem;
-    background-color: #4393f4;
-    font-size: 1.5rem;
-    color: black;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.9s ease, color 0.9s ease;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-    font-family: 'Lora',Georgia,"Times New Roman",serif;
+.button1 {
+  margin: 2rem;
+  margin-left: 16.5rem;
+  width: 8rem;
+  height: 4rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: #4393f4;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.9s ease, color 0.9s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  font-family: "Lora", Georgia, "Times New Roman", serif;
 }
 
-.button1:hover{
-  background-color: #0047AB;
+.button1:hover {
+  background-color: #0047ab;
   color: #fff;
-
 }
 
-.language{
+.language {
   display: flex;
 }
 
-.lang{
+.lang {
   font-size: 1rem;
   width: 5rem;
   height: 2.5rem;
@@ -446,52 +435,51 @@ textarea{
   background-color: #000000;
   color: #fff;
   font-weight: 600;
-  font-family: 'Lora',Georgia,"Times New Roman",serif;
-
+  font-family: "Lora", Georgia, "Times New Roman", serif;
 }
 
-.lang:hover{
+.lang:hover {
   cursor: pointer;
 }
 
-.data{
+.data {
   padding-left: 2rem;
   font-size: 1rem;
-  font-family: 'Lora',Georgia,"Times New Roman",serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
 }
 
-.report{
+.report {
   padding-left: 2rem;
   margin-right: 5rem;
-  font-family: 'Lora',Georgia,"Times New Roman",serif;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
 }
 
-.date{
-  font-family: 'Lora',Georgia,"Times New Roman",serif;
+.date {
+  font-family: "Lora", Georgia, "Times New Roman", serif;
   font-size: 1.3rem;
-  background-color: #5998f0; 
+  background-color: #5998f0;
   display: inline-block;
   text-align: center;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   border-radius: 1rem;
   margin-left: 2rem;
-  margin-top: 66rem;
+  margin-top: 64rem;
 }
 
-.image-container img{
+.image-container img {
   width: 6rem;
   border-radius: 1rem;
   margin-left: 2rem;
   margin-top: -1rem;
 }
 
-.flex{
+.flex {
   display: flex;
   justify-content: space-between;
 }
 
-.inner{
+.inner {
   padding-top: 10rem;
   flex: 1;
   width: 40%;
@@ -499,12 +487,131 @@ textarea{
 
 .inner2 {
   flex: 1;
-  width: 40%;
+  width: 100%;
   margin-left: 2%; /* Add some margin for spacing between the two elements */
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    padding: 0;
+  body {
+    overflow-x: hidden;
   }
+  
+
+  .navbar{
+    height: 5rem;
+
+  }
+
+  .navbar h1{
+    padding-left: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .elements{
+    margin-right: 2rem;
+  }
+
+  .elements h2{
+    font-size: 1.2rem;
+  }
+
+  .circle, .vertical-line {
+    display: none;
+  }
+
+  .vertical-line1, .vertical-line2, .vertical-line3, .vertical-line4, .vertical-line5 {
+    display: none;
+  }
+
+   .h-line, .h-line1, .h-line2, .h-line3, .h-line4, .h-line5{
+    display: none;
+  }
+
+  .content {
+    margin-left: 1rem;
+    margin-top: 7rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .lang{
+    margin-left: 0;
+    margin-top: 7rem;
+    font-size: 0.8rem;
+    height: 2rem;
+  }
+
+  .first-rectangle{
+    margin-left: 1.2rem;
+    margin-top: 2rem;
+    width: 85%;
+    font-size: 0.7rem;
+    padding-right: 1rem;
+  }
+
+  #fourth{
+    height: 30rem;
+  }
+  #fifth{
+    height: 45rem;
+  }
+  #sixth{
+    height: 32rem;
+  }
+
+  .flex{
+    display: block;
+  }
+
+  .report{
+    margin-right: 1rem;
+  }
+
+  .inner{
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .sur{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .date{
+    margin-top: 0;
+    width: 45%;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .rectangle{
+    margin-top: 2rem;
+    margin-left: 4.5rem;
+    width: 14rem;
+  }
+
+  .form h1{
+    font-size: 1.4rem;
+  }
+
+  .survey-form{
+    width: 95%;
+    margin-left: 0.3rem;
+  }
+
+  .survey-form h1{
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+
+  textarea{
+    margin-left: 2rem;
+    height: 6rem;
+  }
+
+  .button1{
+    margin-left: 7.3rem;
+  }
+  
 }
